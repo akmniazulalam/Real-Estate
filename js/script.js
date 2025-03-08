@@ -5,7 +5,7 @@ new VenoBox({
 window.onload = function () {
   setTimeout(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, 100); // Small delay to ensure it happens after content loads
+  }, 10); // Small delay to ensure it happens after content loads
 };
 
 $(document).ready(function () {
@@ -35,25 +35,25 @@ $(document).ready(function () {
     let activeSlide = $('.slick-active');
 
     // Remove animation class from all slides
-    $('.bannerHeading, h1, p, .btnIcon, .realEstate h3, .socialMediaIcons').removeClass('animate');
+    $('.bannerHeading, h1, .bannerTexts p, .btnIcon, .real, .socialMediaIcons').removeClass('animate');
 
     // Apply animation with delay and slide-up effect
-    setTimeout(() => activeSlide.find('.bannerHeading').addClass('animate'), 500);
-    setTimeout(() => activeSlide.find('h1').addClass('animate'), 1000);
-    setTimeout(() => activeSlide.find('p').addClass('animate'), 1500);
-    setTimeout(() => activeSlide.find('.btnIcon').addClass('animate'), 2000);
-    setTimeout(() => activeSlide.find('.real').addClass('animate'), 2500);
+    setTimeout(() => activeSlide.find('.bannerHeading').addClass('animate'), 750);
+    setTimeout(() => activeSlide.find('h1').addClass('animate'), 1250);
+    setTimeout(() => activeSlide.find('.bannerTexts p').addClass('animate'), 1750);
+    setTimeout(() => activeSlide.find('.btnIcon').addClass('animate'), 2250);
+    setTimeout(() => activeSlide.find('.real').addClass('animate'), 2750);
     setTimeout(() => activeSlide.find('.socialMediaIcons').addClass('animate'), 3000);
   });
 
   // Trigger animation on first slide initially
   setTimeout(() => {
     $('.slick-active .bannerHeading').addClass('animate');
-    setTimeout(() => $('.slick-active h1').addClass('animate'), 250);
-    setTimeout(() => $('.slick-active p').addClass('animate'), 500);
-    setTimeout(() => $('.slick-active .btnIcon').addClass('animate'), 1000);
-    setTimeout(() => $('.slick-active .real').addClass('animate'), 1500);
-    setTimeout(() => $('.slick-active .socialMediaIcons').addClass('animate'), 2000);
+    setTimeout(() => $('.slick-active h1').addClass('animate'), 350);
+    setTimeout(() => $('.slick-active .bannerTexts p').addClass('animate'), 700);
+    setTimeout(() => $('.slick-active .btnIcon').addClass('animate'), 1200);
+    setTimeout(() => $('.slick-active .real').addClass('animate'), 1700);
+    setTimeout(() => $('.slick-active .socialMediaIcons').addClass('animate'), 2200);
   }, 1000);
 
 

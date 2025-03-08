@@ -406,6 +406,10 @@ nav.navbar.navbar-expand-lg {
     color: #000;
     font-family: "Poppins", serif;
     padding-top: 20px;
+    transition: .4s;
+}
+.serviceBoxes h4:hover{
+  color: #ff5a3c;
 }
 .serviceBoxes p{
     font-weight: normal;
@@ -645,7 +649,7 @@ nav.navbar.navbar-expand-lg {
 /* Initially hide elements and position them below their normal position */
 .bannerHeading,
 h1,
-p,
+.bannerTexts p,
 .btnIcon,
 .real,
 .socialMediaIcons {
