@@ -35,12 +35,12 @@ $(document).ready(function () {
     let activeSlide = $('.slick-active');
 
     // Remove animation class from all slides
-    $('.bannerHeading, h1, .bannerTexts p, .btnIcon, .real, .socialMediaIcons').removeClass('animate');
+    $('.bannerHeading, h1, .bannerParagraph, .btnIcon, .real, .socialMediaIcons').removeClass('animate');
 
     // Apply animation with delay and slide-up effect
     setTimeout(() => activeSlide.find('.bannerHeading').addClass('animate'), 750);
     setTimeout(() => activeSlide.find('h1').addClass('animate'), 1250);
-    setTimeout(() => activeSlide.find('.bannerTexts p').addClass('animate'), 1750);
+    setTimeout(() => activeSlide.find('.bannerParagraph').addClass('animate'), 1750);
     setTimeout(() => activeSlide.find('.btnIcon').addClass('animate'), 2250);
     setTimeout(() => activeSlide.find('.real').addClass('animate'), 2750);
     setTimeout(() => activeSlide.find('.socialMediaIcons').addClass('animate'), 3000);
@@ -50,7 +50,7 @@ $(document).ready(function () {
   setTimeout(() => {
     $('.slick-active .bannerHeading').addClass('animate');
     setTimeout(() => $('.slick-active h1').addClass('animate'), 350);
-    setTimeout(() => $('.slick-active .bannerTexts p').addClass('animate'), 700);
+    setTimeout(() => $('.slick-active .bannerParagraph').addClass('animate'), 700);
     setTimeout(() => $('.slick-active .btnIcon').addClass('animate'), 1200);
     setTimeout(() => $('.slick-active .real').addClass('animate'), 1700);
     setTimeout(() => $('.slick-active .socialMediaIcons').addClass('animate'), 2200);
@@ -131,3 +131,28 @@ $(".serviceSlider").slick({
     },
   ],
 });
+
+$(".productServiceSlider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  arrows: true,
+  prevArrow: '<i class="fa-solid fa-arrow-left-long gollaOne"></i>',
+  nextArrow: '<i class="fa-solid fa-arrow-right-long gollaTwo"></i>',
+  dots: true,
+    appendDots: $(".productServiceSlider"), // Move dots inside .slides
+    customPaging: function (slider, i) {
+      let images = [
+        "images/3.jpg", // Replace these with your dot images
+        "images/62.jpg",
+        "images/7.jpg",
+      ];
+      return '<img src="' + images[i] + '" class="product_slide_dots">';
+    },
+});
+// Select the element you want to apply the box shadow to
+const element = document.querySelector('.productServiceSlider');
+
+// Add a box shadow to the element
+element.style.boxShadow = '0 5px 20px 0 rgba(23, 44, 82, 0.1)';
