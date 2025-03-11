@@ -1407,3 +1407,166 @@ h1,
   opacity: 1;
   right: -52px;
 }
+
+
+.exploreProperties{
+   background: #FF5A3C;
+   padding: 55px;
+}
+.exploreProperties h3{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFF;
+  padding-bottom: 30px;
+}
+.exploreProperties h6{
+  font-family: 'Nunito';
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+}
+.exploreProperties a{
+  font-family: 'Poppins';
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+  padding: 16px 36px;
+  margin-top: 10px;
+  background: #fff;
+  transition: .4s;
+}
+
+.exploreProperties a:hover{
+  background: #000;
+  color: #FFF;
+}
+.propertiesExplore{
+  text-align: end;
+}
+#dreamHome{
+  position: relative;
+}
+.footer {
+  padding: 180px 26px 85px;
+  background: #171B2A;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+}
+.footerTexts p{
+  font-size: 16px;
+  font-family: 'Nunito';
+  line-height: 28.8px;
+  color: #FFF;
+  /* padding-top: 18px; */
+  padding-bottom: 24px;
+  font-weight: 600;
+  width: 83%;
+}
+.footerTexts h6{
+  font-size: 16px;
+  font-family: 'Nunito';
+  line-height: 28.8px;
+  color: #FFF;
+  font-weight: 600;
+  padding-bottom: 15px;
+  transition: .4s;
+}
+.footerTexts h6:hover{
+  color: #FF5A3C;
+}
+.footer_menu {
+  margin-top: 14px;
+}
+.footerTexts .icon i{
+  padding-right: 10px;
+  color: #FFF;
+}
+.icons i{
+  color: #FFF;
+  padding-right: 10px;
+}
+.footer_menu h4{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFF;
+  padding-bottom: 25px;
+}
+.footer_menu ul{
+  padding: 0;
+}
+.footer_menu ul li{
+  position: relative;
+  padding-bottom: 25px;
+}
+.footer_menu ul li a span{
+  opacity: 0;
+  /* padding-right: 10px; */
+  color: #ff5a3c;
+  position: absolute;
+  left: -25%;
+  transition: .4s;
+}
+.footer_menu ul li a h2{
+  font-size: 16px;
+  font-family: 'Nunito';
+  line-height: 28.8px;
+  color: #FFF;
+  font-weight: 600;
+  padding-bottom: 20px;
+  transition: .4s;
+}
+.footer_menu ul li a h2{
+  position: absolute;
+  left: 0;
+  transition: .4s;
+}
+.footer_menu ul li:hover h2{
+  left: 20px;
+}
+.footer_menu ul li:hover h2{
+  color: #FF5A3C;
+}
+.footer_menu ul li:hover span{
+  opacity: 1;
+  left: 0;
+}
+.footer_menu p{
+  font-size: 16px;
+  font-family: 'Nunito';
+  line-height: 28.8px;
+  color: #FFF;
+  font-weight: 600;
+}
+.copyright {
+  background: #282B38;
+  padding: 30px 26px;
+  position: absolute;
+  left: 0;
+  bottom: -89px;
+  width: 100%;
+}
+.copyright h6{
+  font-size: 16px;
+  font-family: 'Nunito';
+  line-height: 28.8px;
+  color: #FFF;
+  font-weight: 600;
+}
+.copyright p{
+  font-weight: 600;
+  font-family: 'Poppins';
+  color: #FFF;
+  font-size: 14px;
+  transition: .4s;
+}
+.copyrightAlign{
+  align-items: center;
+}
+.copyright p:hover{
+  color: #FF5A3C;
+}
